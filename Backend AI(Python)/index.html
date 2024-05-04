@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myImageDiv">
+        <img id="myImage" src="amg.webp" alt="">
+    </div>
+</body>
+
+<script>
+    var imgElement = document.getElementById('myImage');
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+
+    
+    canvas.width = imgElement.width;
+    canvas.height = imgElement.height;
+    
+
+    ctx.drawImage(imgElement, 0, 0, imgElement.width, imgElement.height);
+
+
+    var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+    
+    var pixelData = imageData.data;
+
+    
+    console.log(pixelData.length);
+
+</script>
+
+</html>

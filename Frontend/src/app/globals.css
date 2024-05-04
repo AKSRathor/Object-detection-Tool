@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#canvas-container {
+  height: 100vh;
+  width: 100%;
+}
+
+#canvas-div {
+  height: 100vh;
+  top: 0;
+  /* position: fixed; */
+  /* z-index: 8; */
+  width: 100%;
+}
+
+#canvas-div {
+  cursor: grabbing;
+  z-index: 2;
+  width: 20%;
+  height: 54vh;
+  padding-top: 8%;
+}
+
+
+
+#canvas-div2 {
+  height: 100vh;
+  top: 0;
+  /* position: fixed; */
+  /* z-index: 8; */
+  width: 100%;
+}
+
+#canvas-div2 {
+  cursor: grabbing;
+  z-index: 2;
+  width: 50%;
+  height: 90vh;
+  padding-top: 8%;
+}

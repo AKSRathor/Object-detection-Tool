@@ -1,0 +1,84 @@
+.imgDHome{
+    background-color: #EAEAEA;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+  position: fixed;
+
+  text-align: center;
+  display: flex;
+  z-index: 5;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imgLoad{
+    width: 15%;
+    border-radius: 5px;
+}
+.UploadDivImg{
+    width: 100%;
+    height: 100vh;
+}
+.imgInput{
+    height: 50vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #EAEAEA;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 15px;
+    border: 8px dotted grey;
+}
+.imgInput input{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    
+}
+.imgInput:hover, .imgInput.dragover{
+    opacity: 0.6
+  }
+  .dragNDropFiles{
+    text-align: center;
+  }
+  .dragNDropFiles img{
+    width: 40%;
+  }
+  .dragNDropFiles p{
+    font-weight: bold;
+    font-size: 2em;
+    color: #222;
+  }
+
+  .imgSubmit{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+  }
+
+  .imgSubmit button{
+    width: 15%;
+    padding: 1%;
+    cursor: pointer;
+    background-color: rgb(6, 106, 255);
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  .imageFetchedAfter{
+    width: 80%;
+  }
+  .imageFetchedAfter img{
+    width: 100%;
+  }
